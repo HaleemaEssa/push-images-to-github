@@ -12,6 +12,7 @@ pipeline {
               git branch: 'main', url: 'https://github.com/HaleemaEssa/push-images-to-github.git'
               sh 'git add .'
               sh 'git commit -m "output image"'
+              sh 'git remote set-url origin https://github.com/HaleemaEssa/push-images-to-github.git'
              // sh 'git remote add origin https://github.com/HaleemaEssa/push-images-to-github.git'
               sh 'git push -u origin main'      
 //             git add .
