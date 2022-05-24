@@ -11,6 +11,7 @@ pipeline {
               sh "git checkout main"
               sh 'git remote set-url origin https://github.com/HaleemaEssa/PushToGithub.git'
              // git branch: 'main', url: 'https://github.com/HaleemaEssa/push-images-to-github.git'
+              sh 'git init'
               sh 'git add .'
               sh 'git commit -am "initial commit"'
               
