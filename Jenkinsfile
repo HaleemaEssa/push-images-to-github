@@ -12,13 +12,16 @@ pipeline {
               sh 'git remote set-url origin https://github.com/HaleemaEssa/PushToGithub.git'
              // git branch: 'main', url: 'https://github.com/HaleemaEssa/push-images-to-github.git'
               sh 'git add .'
-              sh 'git commit -m "initial commit"'
+              sh 'git commit -am "initial commit"'
               
               //sh 'git remote add origin https://github.com/HaleemaEssa/PushToGithub.git'
               sh 'git push -u origin main'      
 //             // git add .
 // git commit -m "initial commit"
  //git push origin master
+                    //withCredentials([usernamePassword(credentialsId: 'ci-github', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
+                        //sh('git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/my-org/my-repo.git')
+                    }
    
             }
          }    
