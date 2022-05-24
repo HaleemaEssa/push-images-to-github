@@ -6,6 +6,7 @@ pipeline {
     stage('PushImage') {
          
             steps {
+               sh 'display ('output.png')'
               sh 'git config --global user.email "haleema_essa@uomosul.edu.iq"'
               sh 'git config --global user.name "HaleemaEssa"'     
               sh "git checkout main"
