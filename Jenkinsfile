@@ -21,7 +21,7 @@ pipeline {
  //git push origin master
                     //withCredentials([usernamePassword(credentialsId: 'ci-github', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
                         //sh('git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/my-org/my-repo.git')
-                    }
+                   // }
    
             }
          }    
