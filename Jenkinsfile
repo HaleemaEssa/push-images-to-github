@@ -6,7 +6,7 @@ pipeline {
     stage('PushImage') {
          
             steps {
-               sh 'pyth3 p.py'
+               sh 'python3 p.py'
              // sh 'git config --global user.email "haleema_essa@uomosul.edu.iq"'
              // sh 'git config --global user.name "HaleemaEssa"'     
               //sh "git checkout main"
